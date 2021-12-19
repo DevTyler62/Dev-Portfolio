@@ -93,13 +93,13 @@ button {
 @media screen and (max-width: 767px) {
 	.nav__menu {
 		position: fixed;
-		background-color: crimson;
+		background-color: #ff9900;
 		top: -100%;
 		left: 0;
 		width: 100%;
 		padding: 4rem 0;
 		border-radius: 0 0 1.5rem 1.5rem;
-		box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.1);
+		box-shadow: 4px 4px 4px hsla(0, 0%, 0%, 0.507);
 		transition: 0.4s;
 	}
 }
@@ -118,7 +118,7 @@ button {
 }
 
 .nav__link:hover {
-	color: blue;
+	color: #ff9900;
 }
 
 .nav__close {
@@ -135,7 +135,7 @@ button {
 
 /*======== Home =========*/
 .home__container {
-	padding-top: 2rem;
+	padding-top: 4rem;
 	row-gap: 1.5rem;
 }
 
@@ -162,16 +162,17 @@ button {
 }
 
 .tyler {
-	color: rgb(64, 160, 224);
+	color: #ff9900;
 }
 
 /*===== Button =======*/
 .button {
 	display: inline-block;
-	background-color: rgb(87, 87, 87);
+	background-color: #ff9900;
 	color: white;
 	padding: 0.5rem 2rem;
 	font-size: 1.4rem;
+	font-weight: 700;
 }
 .button__icon {
 	margin-left: 0.5rem;
@@ -189,7 +190,7 @@ button {
 .about__icon {
 	font-size: 4rem;
 	margin-bottom: 0.5rem;
-	color: rgb(64, 160, 224);
+	color: #ff9900;
 }
 
 .about__description {
@@ -211,32 +212,40 @@ button {
 .work__content {
 	display: grid;
 	position: relative;
-	padding: 6rem 6rem;
 }
 
 .work__title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	text-align: center;
-	color: white;
+	color: rgb(228, 228, 228);
+	font-size: 1.5rem;
 	font-weight: 700;
+	transition: 0.3s;
 }
 
-.one {
-	background-color: rgb(138, 205, 50);
+.work__img {
+	background-color: black;
+	overflow: hidden;
 }
-.two {
-	background-color: rgb(205, 50, 50);
+
+.work__img-img {
+	opacity: 0.6;
+	width: 100%;
+	height: auto;
+	transform: scale(1.15);
+	transition: transform 0.5s, opacity 0.5s;
 }
-.three {
-	background-color: rgb(143, 50, 205);
+
+.work__content:hover .work__img-img {
+	opacity: 1;
+	transform: scale(1);
 }
-.four {
-	background-color: rgb(50, 60, 205);
-}
-.five {
-	background-color: rgb(205, 156, 50);
-}
-.six {
-	background-color: rgb(50, 148, 205);
+
+.work__content:hover .work__title {
+	color: black;
 }
 
 /*====== Contact =======*/
@@ -247,9 +256,10 @@ button {
 .contact__container {
 	margin-top: 3rem;
 	padding: 5rem 2rem;
-	background-color: burlywood;
+	background-color: #1073aa;
 	border-radius: 2rem;
 	margin-bottom: 4rem;
+	box-shadow: 0px 4px 8px hsl(202, 59%, 39%);
 }
 
 .contact__form {
@@ -262,7 +272,7 @@ button {
 	border: none;
 	padding: 0.5rem 2rem 0.5rem 0.5rem;
 	border-radius: 0.5rem;
-	box-shadow: 4px 4px 16px hsl(357, 100%, 50%);
+	box-shadow: 0px 2px 4px hsl(0, 0%, 100%);
 }
 
 .contact__email {
@@ -271,42 +281,49 @@ button {
 	border: none;
 	padding: 0.5rem 2rem 0.5rem 0.5rem;
 	border-radius: 0.5rem;
-	box-shadow: 4px 4px 16px hsl(357, 100%, 50%);
+	box-shadow: 0px 2px 4px hsl(0, 0%, 100%);
 }
 
 .contact__text {
 	width: 70%;
 	margin-bottom: 1rem;
 	border: none;
-	padding: 0.5rem 2rem 4rem 0.5rem;
+	padding: 0.5rem 2rem 8rem 0.5rem;
 	border-radius: 0.5rem;
-	box-shadow: 4px 4px 16px hsl(357, 100%, 50%);
+	box-shadow: 0px 2px 4px hsl(0, 0%, 100%);
 }
 
 .contact__button {
 	text-align: center;
 	margin-top: 1.5rem;
-	width: 60%;
+	width: 50%;
 	justify-self: center;
 	border-radius: 0.75rem 0.25rem;
 }
 
 /*======== Footer =======*/
 .footer {
-	background-color: cornflowerblue;
+	background-color: #ff9900;
 }
 
 .footer__links {
 	text-align: center;
 }
 
-.footer__item {
-	margin-bottom: 1.5rem;
-	font-weight: 500;
+.footer__item-social {
+	margin: 2rem;
+	width: 4%;
 }
 
 .footer__link {
-	color: white;
+	color: rgb(255, 255, 255);
+	font-size: 1.15rem;
+	font-weight: 600;
+	transition: 0.4s;
+}
+
+.footer__link:hover {
+	color: rgb(110, 110, 110);
 }
 
 .footer__socials {
@@ -316,9 +333,32 @@ button {
 	align-items: center;
 }
 
+.filter-github {
+	filter: invert(2%) sepia(10%) saturate(652%) hue-rotate(314deg)
+		brightness(101%) contrast(86%);
+}
+
+.filter-linkedin {
+	filter: invert(34%) sepia(76%) saturate(5199%) hue-rotate(198deg)
+		brightness(84%) contrast(92%);
+}
+
+.filter-instagram {
+	filter: invert(36%) sepia(82%) saturate(3043%) hue-rotate(327deg)
+		brightness(95%) contrast(88%);
+}
+
+.filter-youtube {
+	filter: invert(13%) sepia(65%) saturate(7005%) hue-rotate(355deg)
+		brightness(99%) contrast(117%);
+}
+
 .footer__social-link {
-	margin-left: 1rem;
-	color: white;
+	padding-top: 1.6rem;
+}
+
+.footer__social-link:hover {
+	opacity: 0.6;
 }
 
 .footer__madeby {
@@ -454,6 +494,10 @@ button {
 	.container {
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.home__img {
+		width: 140%;
 	}
 
 	.home__data {

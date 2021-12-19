@@ -15,7 +15,7 @@
 		<header class="header" id="header">
 			<nav class="nav container">
 				<a href="#" class="nav__logo"
-					><img src="./img/logo.svg" alt="" class="nav__logo-img"
+					><img src="./img/logo-orange.svg" alt="" class="nav__logo-img"
 				/></a>
 				<div class="nav__menu" id="nav-menu">
 					<ul class="nav__list">
@@ -26,7 +26,7 @@
 							<a href="#about" class="nav__link">About</a>
 						</li>
 						<li class="nav__item">
-							<a href="#projects" class="nav__link">Projects</a>
+							<a href="#work" class="nav__link">Work</a>
 						</li>
 						<li class="nav__item">
 							<a href="#contact" class="nav__link">Contact</a>
@@ -55,17 +55,17 @@
 						<h3 class="home__description">
 							I take ideas from concept to reality.
 						</h3>
-						<a href="#" class="button home__button"
+						<a href="#work" class="button home__button"
 							>View my work<i class="bx bx-right-arrow-alt button__icon"></i
 						></a>
 					</div>
 					<div class="home__img">
-						<img src="./img/header.png" alt="" class="home__img-img" />
+						<img src="./img/header-color.png" alt="" class="home__img-img" />
 					</div>
 				</div>
 			</section>
 
-			<section class="about section container">
+			<section class="about section container" id="about">
 				<h2 class="section__title">ABOUT ME</h2>
 				<div class="about__container grid">
 					<div class="about__content">
@@ -98,40 +98,52 @@
 				</div>
 			</section>
 
-			<section class="work section container">
+			<section class="work section container" id="work">
 				<h2 class="section__title">MY WORK</h2>
 				<h3 class="work__subtitle">
 					Here are some of the projects I have worked on.
 				</h3>
 				<div class="work__container grid">
 					<div class="work__content one">
-						<img src="" alt="" />
+						<figure class="work__img">
+							<img src="./img/buggy.png" class="work__img-img" alt="" />
+						</figure>
 						<h4 class="work__title">Buggy Bug Tracker</h4>
 					</div>
 					<div class="work__content two">
-						<img src="" alt="" />
+						<figure class="work__img">
+							<img src="./img/datafy.png" class="work__img-img" alt="" />
+						</figure>
 						<h4 class="work__title">Datafy</h4>
 					</div>
 					<div class="work__content three">
-						<img src="" alt="" />
+						<figure class="work__img">
+							<img src="./img/skywind.png" class="work__img-img" alt="" />
+						</figure>
 						<h4 class="work__title">SkyWind</h4>
 					</div>
 					<div class="work__content four">
-						<img src="" alt="" />
+						<figure class="work__img">
+							<img src="./img/church.png" class="work__img-img" alt="" />
+						</figure>
 						<h4 class="work__title">Church Website</h4>
 					</div>
 					<div class="work__content five">
-						<img src="" alt="" />
+						<figure class="work__img">
+							<img src="./img/buggy.png" class="work__img-img" alt="" />
+						</figure>
 						<h4 class="work__title">Portfolio</h4>
 					</div>
 					<div class="work__content six">
-						<img src="" alt="" />
+						<figure class="work__img">
+							<img src="./img/buggy.png" class="work__img-img" alt="" />
+						</figure>
 						<h4 class="work__title">More on the way</h4>
 					</div>
 				</div>
 			</section>
 
-			<section class="contact section container">
+			<section class="contact section container" id="contact">
 				<h2 class="section__title">CONTACT ME</h2>
 				<h3 class="contact__subtitle">
 					Enjoy my work and intrested in <br />contacting me?
@@ -160,27 +172,31 @@
 				<div class="footer__container container grid">
 					<ul class="footer__links">
 						<li class="footer__item">
-							<a href="#" class="footer__link">Home</a>
+							<a href="#home" class="footer__link">Home</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer__link">About</a>
+							<a href="#about" class="footer__link">About</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer__link">Projects</a>
+							<a href="#work" class="footer__link">Work</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer__link">Contact</a>
+							<a href="#contact" class="footer__link">Contact</a>
 						</li>
 					</ul>
 					<ul class="footer__socials">
-						<li class="footer__item">
-							<a href="#" class="footer__social-link">Github</a>
+						<li class="footer__item-social">
+							<a href="https://github.com/DevTyler62" class="footer__social-link"><img src="./img/github.svg" alt="" class="filter-github hover"></a>
+							</a>
 						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__social-link">LinkedIn</a>
+						<li class="footer__item-social">
+							<a href="https://www.linkedin.com/in/tyler-smith-121205196/" class="footer__social-link"><img src="./img/linkedin.svg" alt="" class="filter-linkedin hover"></a>
 						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__social-link">Instagram</a>
+						<li class="footer__item-social">
+							<a href="https://www.instagram.com/tyler_codes/" class="footer__social-link"><img src="./img/instagram.svg" alt="" class="filter-instagram hover"></a>
+						</li>
+						<li class="footer__item-social">
+							<a href="https://www.youtube.com/channel/UCgGstnHlOojOSrS2IYz8ziA" class="footer__social-link"><img src="./img/youtube.svg" alt="" class="filter-youtube hover"></a>
 						</li>
 					</ul>
 				</div>
