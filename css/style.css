@@ -375,7 +375,7 @@ button {
 }
 
 .work__img-img {
-	opacity: 0.6;
+	opacity: 0.4;
 	width: 100%;
 	height: auto;
 	transform: scale(1.15);
@@ -383,12 +383,24 @@ button {
 }
 
 .work__content:hover .work__img-img {
-	opacity: 1;
+	opacity: 0.7;
 	transform: scale(1);
 }
 
 .work__content:hover .work__title {
 	color: black;
+}
+
+.img-six {
+	width: 50%;
+	padding-top: 1.5rem;
+	display: block;
+	margin: auto;
+}
+
+.work__content:hover .title-six {
+	color: hsl(0, 0%, 100%);
+	font-weight: 800;
 }
 
 /*====== Contact =======*/
