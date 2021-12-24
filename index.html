@@ -166,21 +166,24 @@
 					Enjoy my work and intrested in <br />contacting me?
 				</h3>
 				<div class="contact__container grid">
-					<form action="" class="contact__form">
-						<input type="text" placeholder="Name" class="contact__name" />
+					<form action="" class="contact__form" id="contact_form">
+						<input type="hidden" name="contact_number">
+						<input type="text" placeholder="Name" class="contact__name" name="user_name"/>
 						<input
 							type="email"
-							name=""
+							name="user_email"
 							id=""
 							placeholder="Email Address"
 							class="contact__email"
 						/>
-						<input
+						<textarea
 							type="text"
 							placeholder="Your message"
 							class="contact__text"
-						/>
-						<a href="#" class="button contact__button">Submit</a>
+							name="message"
+						></textarea>
+						<input type="submit" class="button contact__button" value="Submit">
+						<!-- <a href="#" class="button contact__button">Submit</a> -->
 					</form>
 				</div>
 			</section>
@@ -224,5 +227,6 @@
 			</footer>
 		</main>
 	</body>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 	<script src="./js/index.js"></script>
 </html>
