@@ -41,6 +41,11 @@ h1 {
 .description {
 	margin-bottom: 10rem;
 	line-height: 160%;
+	font-weight: 500;
+}
+
+.hostinger {
+	width: 100%;
 }
 
 @media screen and (min-width: 767px) {
@@ -50,5 +55,9 @@ h1 {
 
 	.technology__item-img {
 		width: 40%;
+	}
+
+	.hostinger {
+		width: 100%;
 	}
 }
