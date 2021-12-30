@@ -291,7 +291,7 @@ button {
 /*======== Home =========*/
 .home__container {
 	padding-top: 4rem;
-	row-gap: 1.5rem;
+	row-gap: 4rem;
 	margin-bottom: 4rem;
 }
 
@@ -337,6 +337,14 @@ button {
 }
 
 /*====== About ======*/
+.about {
+	margin-bottom: 2rem;
+}
+
+.about__title {
+	margin-bottom: 2.75rem;
+}
+
 .about__container {
 	grid-template-columns: repeat(1, 1fr);
 	gap: 2.5rem 1.5rem;
@@ -442,6 +450,8 @@ button {
 }
 
 .contact__name {
+	font-family: "Quicksand", sans-serif;
+	font-weight: 500;
 	width: 80%;
 	margin-bottom: 2rem;
 	border: none;
@@ -451,6 +461,8 @@ button {
 }
 
 .contact__email {
+	font-family: "Quicksand", sans-serif;
+	font-weight: 500;
 	width: 80%;
 	margin-bottom: 2rem;
 	border: none;
@@ -460,6 +472,8 @@ button {
 }
 
 .contact__text {
+	font-family: "Quicksand", sans-serif;
+	font-weight: 500;
 	width: 80%;
 	margin-bottom: 1rem;
 	border: none;
