@@ -1,4 +1,54 @@
+@import url("style.css");
+
+.back__arrow-icon {
+	font-size: 2rem;
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+}
+
+a {
+	color: var(--paletter-text);
+}
+
 h1 {
-	margin: 8rem;
-	text-align: center;
+	text-align: left;
+	margin-bottom: 2rem;
+}
+
+.project__image-img {
+	margin-bottom: 2rem;
+}
+
+.technology__list {
+	width: 80%;
+	display: flex;
+}
+
+.technology__item-img {
+	min-width: 0;
+	width: 60%;
+}
+
+.buttons {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.button__code {
+	margin-right: 2rem;
+}
+
+.description {
+	margin-bottom: 10rem;
+	line-height: 160%;
+}
+
+@media screen and (min-width: 767px) {
+	.technology__list {
+		width: 70%;
+	}
+
+	.technology__item-img {
+		width: 40%;
+	}
 }
