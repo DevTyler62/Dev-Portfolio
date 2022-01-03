@@ -347,13 +347,28 @@ button {
 
 .about__container {
 	grid-template-columns: repeat(1, 1fr);
-	gap: 2.5rem 1.5rem;
+	column-gap: 4rem;
 }
 
-.about__icon {
+/* .about__icon {
 	font-size: 4rem;
 	margin-bottom: 0.5rem;
 	color: #ff9900;
+} */
+
+.about__img {
+	text-align: center;
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+}
+
+.about__img-img {
+	width: 400px;
+}
+
+.about__content {
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .about__description {
@@ -673,8 +688,7 @@ button {
 	}
 
 	.about__container {
-		grid-template-columns: repeat(3, 1fr);
-		column-gap: 2rem;
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.footer__links {
