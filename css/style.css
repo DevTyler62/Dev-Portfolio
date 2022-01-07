@@ -350,12 +350,6 @@ button {
 	column-gap: 4rem;
 }
 
-/* .about__icon {
-	font-size: 4rem;
-	margin-bottom: 0.5rem;
-	color: #ff9900;
-} */
-
 .about__img {
 	text-align: center;
 	margin-top: 2rem;
@@ -374,6 +368,7 @@ button {
 .about__description {
 	font-weight: 500;
 	line-height: 150%;
+	font-size: 1.15rem;
 }
 
 /*===== My work =====*/
