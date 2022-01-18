@@ -7,8 +7,8 @@
 	--light-text: #000;
 	--light-orange: hsl(36, 100%, 50%);
 	--light-blue: hsl(201, 83%, 36%);
-	--light-work-back: rgb(218, 218, 218);
-	--light-work-border: rgb(207, 207, 207);
+	--light-work-back: rgb(251, 250, 252);
+	--light-work-border: rgb(221, 221, 221);
 
 	/*Dark*/
 	--dark-background: rgb(14, 18, 23);
