@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="/css/work.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./img/favicon_io/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./img/favicon_io/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./img/favicon_io/favicon-16x16.png"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+		/>
+		<script
+			src="https://kit.fontawesome.com/f46d827629.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="/components/header.js"></script>
+		<script src="/components/footer.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-ZZL5931NLJ"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-ZZL5931NLJ");
+		</script>
+		<title>Tiic Tac Toe</title>
+	</head>
+	<body>
+		<header-component></header-component>
+		<main>
+			<div class="container back__arrow">
+				<a href="/index.html">
+					<i class="bx bx-arrow-back back__arrow-icon"></i>
+				</a>
+			</div>
+			<div class="container project__title">
+				<h1 class="project__title-title">Tic Tac Toe</h1>
+			</div>
+			<div class="container project__image">
+				<img src="./img/tictactoe.png" alt="" class="project__image-img" />
+			</div>
+			<div class="container technology">
+				<h1 class="technology__title">Technologies Used</h1>
+				<ul class="technology__list">
+					<li class="technology__list-item">
+						<img src="./img/html.png" alt="" class="technology__item-img" />
+					</li>
+					<li class="technology__list-item">
+						<img src="./img/css-3.png" alt="" class="technology__item-img" />
+					</li>
+					<li class="technology__list-item">
+						<img
+							src="./img/javascript.png"
+							alt=""
+							class="technology__item-img"
+						/>
+					</li>
+				</ul>
+			</div>
+			<div class="container buttons">
+				<a
+					href="https://github.com/DevTyler62/tic-tac-toe"
+					class="button button__code"
+					>Code</a
+				>
+				<a
+					href="https://tictactoe-code.netlify.app/"
+					class="button button__live"
+					>Live Site</a
+				>
+			</div>
+			<div class="container project__description">
+				<h1 class="description__title">Description</h1>
+				<p class="description">
+					I have created a TIc Tac Toe game that both includes the functions to
+					be able to play with either two people or play against a computer. The
+					computers code is written in a way to look at the users selections for
+					picking a spot in order to block them from winning while also having a
+					random spot selection aspect to the game as well. I figured that if
+					the computer did not have some random spot picking then a game would
+					most likely end in a tie most games. Upon either a tie or a winning
+					game the pop ups that appear come from a cool add on known as
+					Sweetalert2. Using this allowed me to have some nice pop up boxes that
+					match the UI I was going for. This project was built using HTML, CSS,
+					and JavaScript.
+				</p>
+			</div>
+			<footer-component></footer-component>
+		</main>
+	</body>
+	<script src="/js/index.js"></script>
+</html>
