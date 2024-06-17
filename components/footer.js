@@ -1,10 +1,10 @@
 class Footer extends HTMLElement {
-	constructor() {
-		super();
-	}
+  constructor() {
+    super();
+  }
 
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
 
         <footer class="footer section">
         <div class="footer__container container grid">
@@ -31,10 +31,10 @@ class Footer extends HTMLElement {
                     <a href="https://www.linkedin.com/in/tyler-smith-121205196/" class="footer__social-link"><img src="/img/linkedin.svg" alt="" class="filter-linkedin hover"></a>
                 </li>
                 <li class="footer__item-social">
-                    <a href="https://www.instagram.com/tyler_codes/" class="footer__social-link"><img src="/img/instagram.svg" alt="" class="filter-instagram hover"></a>
+                    <a href="https://www.instagram.com/tylerstechspace/" class="footer__social-link"><img src="/img/instagram.svg" alt="" class="filter-instagram hover"></a>
                 </li>
                 <li class="footer__item-social">
-                    <a href="https://www.youtube.com/channel/UCgGstnHlOojOSrS2IYz8ziA" class="footer__social-link"><img src="/img/youtube.svg" alt="" class="filter-youtube hover"></a>
+                    <a href="https://www.youtube.com/channel/UChfV62BeNxB5Fq4nEHuMJVA" class="footer__social-link"><img src="/img/youtube.svg" alt="" class="filter-youtube hover"></a>
                 </li>
             </ul>
         </div>
@@ -43,7 +43,7 @@ class Footer extends HTMLElement {
         /></span>
         <span class="footer__copy">&#169; TylerCodes. All rights reserved</span>
     </footer>`;
-	}
+  }
 }
 
 customElements.define("footer-component", Footer);
